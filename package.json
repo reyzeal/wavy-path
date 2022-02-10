@@ -1,10 +1,12 @@
 {
   "name": "wavy-path",
-  "version": "0.0.1",
+  "version": "0.0.5",
   "description": "use `~` as prefix in require and import calls",
   "main": "index.js",
+  "bin": "./update.js",
   "scripts": {
     "postinstall": "node postinstall",
+    "bin": "node update.js",
     "test": "node test"
   },
   "keywords": [
