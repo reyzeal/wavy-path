@@ -1,5 +1,11 @@
 # wavy-path
 
+## Installation
+
+```
+npm install wavy-path
+```
+
 ## Introduction
 
 Project ini bertujuan untuk memudahkan proses coding / development nodejs terutama pada proses `require`. Biasanya untuk melakukan `require` dari nested folder, perlu menyertakan double dot untuk naik ke parent directory. 
