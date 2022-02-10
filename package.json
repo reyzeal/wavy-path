@@ -4,7 +4,7 @@
   "description": "use `~` as prefix in require and import calls",
   "main": "index.js",
   "scripts": {
-    "postinstall": "node postInstall",
+    "postinstall": "node postinstall",
     "test": "node test"
   },
   "keywords": [
