@@ -1,0 +1,26 @@
+{
+  "name": "wavy-path",
+  "version": "0.0.1",
+  "description": "use `~` as prefix in require and import calls",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "node postInstall",
+    "bin": "node postInstall",
+    "test": "node test"
+  },
+  "keywords": [
+    "~",
+    "require",
+    "symlink"
+  ],
+  "author": "Rizal Ardhi Rahmadani",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/reyzeal/wavy-path.git"
+  },
+  "bugs": {
+    "url": "https://github.com/reyzeal/wavy-path/issues"
+  },
+  "homepage": "https://github.com/reyzeal/wavy-path#readme"
+}
