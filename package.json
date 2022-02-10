@@ -1,6 +1,6 @@
 {
   "name": "wavy-path",
-  "version": "0.0.5",
+  "version": "0.1.0",
   "description": "use `~` as prefix in require and import calls",
   "main": "index.js",
   "bin": "./update.js",

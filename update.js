@@ -25,6 +25,6 @@ for(let map of mapping){
     } catch (e) {
         fs.symlinkSync(map.original, link, 'junction');
         console.log("Mapping", map.original, "⇒", link)
-        process.exit(0);
+        // process.exit(0);
     }
 }

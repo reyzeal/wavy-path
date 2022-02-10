@@ -22,9 +22,9 @@ for(let map of mapping){
         var existingReal = path.resolve(fs.realpathSync(link));
     } catch (e) {
         fs.symlinkSync(map.original, link, 'junction');
-        process.exit(0);
+        console.log("Mapping", map.original, "⇒", link)
     }
     if (existingReal) {
-        throw new Error(link + ' is already being used')
+        console.error(link + ' is already being used')
     }
 }
