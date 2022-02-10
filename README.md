@@ -31,6 +31,7 @@ Jika berkenan menambahkan symbolic link lain silakan membuat file config `wavy-p
 ```
 
 `original` : path relative dari root project. Example : `src/module`
+
 `link` : nama symlink yang bakal digunakan untuk path original tsb. Example `module` hasilnya menjadi `~module` ketika digunakan untuk require
 
 ### Note
