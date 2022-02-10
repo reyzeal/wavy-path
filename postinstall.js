@@ -14,7 +14,7 @@ if(fs.existsSync(path.join(root,"wavy-path.config.json"))){
     mapping = [...mapping,...require(path.join(root,"wavy-path.config.json"))]
 }
 for(let map of mapping){
-    const link = "/node_modules/~"+map.link
+    const link = root+"/node_modules/~"+map.link
     try {
         var existingReal = path.resolve(fs.realpathSync(link));
     } catch (e) {
