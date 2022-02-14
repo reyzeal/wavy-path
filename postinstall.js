@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 var fs = require('fs');
 var path = require('path');
 
@@ -19,12 +21,10 @@ if(fs.existsSync(path.join(root,"wavy-path.config.json"))){
 for(let map of mapping){
     var link = root+"/node_modules/~"+map.link
     try {
-        var existingReal = path.resolve(fs.realpathSync(link));
+        path.resolve(fs.realpathSync(link));
     } catch (e) {
         fs.symlinkSync(map.original, link, 'junction');
         console.log("Mapping", map.original, "⇒", link)
-    }
-    if (existingReal) {
-        console.error(link + ' is already being used')
+        // process.exit(0);
     }
 }
